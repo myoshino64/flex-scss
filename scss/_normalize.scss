@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $defaultFont;
+}
+
+main > section, header {
+  padding: 4%;
+}
+
+section > article:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section > article:nth-child(1) > h2 {
+  width: fit-content;
+  border-bottom: 1px solid $defaultColor;
+  color: $defaultColor;
+  font-weight: 300;
+}
+
+
+
+.subheader {
+  font-weight: 600;
+  text-transform: uppercase;
+}

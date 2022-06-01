@@ -1,0 +1,21 @@
+@mixin skillProfile($url) {
+  background: url($url);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+}
+
+@mixin flexColumn (
+  $rowGap: 10px,
+  $alignItems: center,
+  $justifyContent: center
+) {
+  display: flex;
+  flex-direction: column;
+  row-gap: $rowGap;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}

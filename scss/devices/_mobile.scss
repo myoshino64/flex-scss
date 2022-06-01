@@ -1,0 +1,102 @@
+@media (min-width: 300px) {
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 12px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .profiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+  }
+  
+  .profiles > aside:nth-child(1) {
+    @include skillProfile("/img/member1.png");
+  }
+  
+  .profiles > aside:nth-child(2) {
+    @include skillProfile("/img/member2.png");
+  }
+  
+  .profiles > aside:nth-child(3) {
+    @include skillProfile("/img/member3.png");
+  }
+  
+  .profiles > aside:nth-child(4) {
+    @include skillProfile("/img/member4.png");
+  }
+  
+  .profiles h3,
+  .profiles span,
+  .profiles div {
+    display: none;
+  }
+
+  .design-skills {
+    @include flexColumn(15px, center, unset);
+    
+    > div {
+      @include flexColumn(15px, center, unset);
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    > article:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 35px;
+    }
+
+    > article:nth-child(2) > article {
+      display: flex;
+      flex-direction: column;
+      row-gap: 35px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      width: 100%;
+    }
+
+    input, textarea {
+      width: 90%;
+      padding: 3%;
+      font-size: 18px;
+      border: 1px solid lightgray;
+      font-weight: 300;
+    }
+    
+    textarea {
+      height: 20vh;
+      font-family: $defaultFont;
+    }
+
+    [type="submit"] {
+      width: 95%;
+      background-color: $defaultColor;
+      color: whitesmoke;
+      border: 0px solid transparent;
+    }
+  }
+}
