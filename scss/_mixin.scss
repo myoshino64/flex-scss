@@ -8,6 +8,15 @@
   border-radius: 50%;
 }
 
+@mixin portfolioPics ($url) {
+  background: url($url);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45vh;
+  height: 45vh;
+}
+
 @mixin flexColumn (
   $rowGap: 10px,
   $alignItems: center,

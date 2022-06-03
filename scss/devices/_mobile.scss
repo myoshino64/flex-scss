@@ -1,8 +1,161 @@
 @media (min-width: 300px) {
+  header {
+    height: 50vh;
+    background: url("/img/p1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    > article {
+      height: 10vh;
+      background-color: white;
+      padding: 4%;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: left;
+
+      > div {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+      }
+
+      [class^="fa-"] {
+        font-size: 18px;
+      }
+    }
+    
+    p {
+      background-image: url("/img/logo.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 5vh;
+      height: 5vh;
+    } 
+
+    div {
+      display: flex;
+      justify-content: center;
+      column-gap: 10px;
+    }
+
+    h1 {
+      font-size: 30px;
+      color: $defaultColor;
+    }
+
+    [class^="fa-"] {
+      font-size: 18px;
+      color: black;
+      text-decoration: none;
+    }
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a  {
+      text-decoration: none;
+      color: $defaultColor;
+      padding: 5%;
+      width: 100%;
+    }
+  }
+
+  nav > ul {
+    display: none;
+  }
+
+  details {
+    width: 80%;
+    position: relative;
+    text-align: right;
+  }
+
+  details > ul {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    > li {
+      position: relative;
+      list-style-type: none;
+      width: 100%;
+      justify-content: right;
+    }
+  }
+
+  summary {
+    background-color: $defaultColor;
+    color: white;
+    padding: 5%;
+    font-size: 26px;
+  }
+
   footer {
     display: flex;
     justify-content: space-evenly;
     font-size: 12px;
+  }
+
+  .services {
+    @include flexColumn(40px);
+
+    > article:nth-child(2) {
+      @include flexColumn(40px);
+    }
+    
+    aside {
+      @include flexColumn(20px, center, space-between);
+      padding: 5%;
+      height: 30vh;
+      color: whitesmoke;
+    }
+
+    aside:nth-child(1) {
+      background-color: $blockColor1;
+    }
+
+    aside:nth-child(2) {
+      background-color: $blockColor2;
+    }
+
+    i {
+      font-size: 50px;
+    }
+  }
+
+  .gallery {
+    @include flexColumn(20px);
+  }
+
+  .pics {
+    > aside {
+      h3, p, a {
+        display: none;
+      }
+    }
+
+    > aside:nth-child(1) {
+      @include portfolioPics("/img/p1.jpg")
+    }
+
+    > aside:nth-child(2) {
+      @include portfolioPics("/img/p2.jpg")
+    }
+
+    > aside:nth-child(3) {
+      @include portfolioPics("/img/p3.jpg")
+    }
+
+    > aside:nth-child(1) {
+      @include portfolioPics("/img/p1.jpg")
+    }
   }
 
   .skills {
@@ -33,6 +186,26 @@
   .profiles > aside:nth-child(4) {
     @include skillProfile("/img/member4.png");
   }
+
+  .profiles > aside:nth-child(5) {
+    @include skillProfile("/img/member5.png");
+  }
+
+  .profiles > aside:nth-child(5) {
+    @include skillProfile("/img/member5.png");
+  }
+
+  .profiles > aside:nth-child(6) {
+    @include skillProfile("/img/member6.png");
+  }
+
+  .profiles > aside:nth-child(7) {
+    @include skillProfile("/img/member7.png");
+  }
+
+  .profiles > aside:nth-child(8) {
+    @include skillProfile("/img/member8.png");
+  }
   
   .profiles h3,
   .profiles span,
@@ -41,12 +214,79 @@
   }
 
   .design-skills {
-    @include flexColumn(15px, center, unset);
-    
-    > div {
+    @include flexColumn(50px, center, unset);
+    font-size: 14px;
+    font-weight: 300;
+    > div:nth-child(2) {
       @include flexColumn(15px, center, unset);
     }
+
+    > div:nth-child(1) {
+      @include flexColumn(0, center, unset);
+      text-align: center;
+    }
   }
+
+  .skills-description {
+    @include flexColumn(25px)
+  }
+
+  .progress-bar {
+    width: 100%;
+    @include flexColumn(5px);
+    color: whitesmoke;
+
+    span {
+      height: 4vh;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      padding-left: 10%;
+      background-color: $defaultColor;
+    }
+
+    %p-progress {
+      width: 100%;
+      background-color: gainsboro;
+      display: flex;
+    }
+
+    > p:nth-child(1) {
+      @extend %p-progress;
+      > span {
+        width: 80%;
+      }
+    }
+    > p:nth-child(2) {
+      @extend %p-progress;
+      > span {
+        width: 70%;
+      }
+    }
+    > p:nth-child(3) {
+      @extend %p-progress;
+      > span {
+        width: 80%;
+      }
+    }
+    > p:nth-child(4) {
+      @extend %p-progress;
+      > span {
+        width: 80%;
+      }
+    }
+
+    span {
+      height: 4vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 10%;
+      background-color: $defaultColor;
+    }
+
+  }
+
 
   .contact {
     display: flex;
@@ -99,4 +339,5 @@
       border: 0px solid transparent;
     }
   }
+
 }
