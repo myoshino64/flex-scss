@@ -46,7 +46,7 @@ section > article:nth-child(1) > h2 {
 @media (min-width: 300px) {
   header {
     height: 50vh;
-    background: url("/img/p1.jpg");
+    background: url("/img/summer.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,6 +78,9 @@ section > article:nth-child(1) > h2 {
   header > article [class^="fa-"] {
     font-size: 18px;
   }
+  header > article [class*="fa-bars"] {
+    color: whitesmoke;
+  }
   header p {
     background-image: url("/img/logo.png");
     background-size: contain;
@@ -105,6 +108,9 @@ section > article:nth-child(1) > h2 {
     color: black;
     text-decoration: none;
   }
+  header [class*="fa-bars"] {
+    color: whitesmoke;
+  }
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -115,6 +121,7 @@ section > article:nth-child(1) > h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-color: white;
   }
   nav a {
     text-decoration: none;
@@ -209,9 +216,9 @@ section > article:nth-child(1) > h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding: 5%;
     height: 30vh;
     color: whitesmoke;
@@ -221,6 +228,29 @@ section > article:nth-child(1) > h2 {
   }
   .services aside:nth-child(2) {
     background-color: #3498DB;
+  }
+  .services aside:nth-child(3) {
+    background-color: #2ECC71;
+  }
+  .services aside:nth-child(4) {
+    background-color: #E67EBB;
+  }
+  .services div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
   }
   .services i {
     font-size: 50px;
@@ -233,7 +263,23 @@ section > article:nth-child(1) > h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 20px;
+    row-gap: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -268,8 +314,40 @@ section > article:nth-child(1) > h2 {
     width: 45vh;
     height: 45vh;
   }
-  .pics > aside:nth-child(1) {
-    background: url("/img/p1.jpg");
+  .pics > aside:nth-child(4) {
+    background: url("/img/p4.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45vh;
+    height: 45vh;
+  }
+  .pics > aside:nth-child(5) {
+    background: url("/img/p5.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45vh;
+    height: 45vh;
+  }
+  .pics > aside:nth-child(6) {
+    background: url("/img/p6.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45vh;
+    height: 45vh;
+  }
+  .pics > aside:nth-child(7) {
+    background: url("/img/p7.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45vh;
+    height: 45vh;
+  }
+  .pics > aside:nth-child(8) {
+    background: url("/img/p8.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -328,51 +406,6 @@ section > article:nth-child(1) > h2 {
   }
   .profiles > aside:nth-child(4) {
     background: url("/img/member4.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30vh;
-    height: 30vh;
-    border-radius: 50%;
-  }
-  .profiles > aside:nth-child(5) {
-    background: url("/img/member5.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30vh;
-    height: 30vh;
-    border-radius: 50%;
-  }
-  .profiles > aside:nth-child(5) {
-    background: url("/img/member5.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30vh;
-    height: 30vh;
-    border-radius: 50%;
-  }
-  .profiles > aside:nth-child(6) {
-    background: url("/img/member6.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30vh;
-    height: 30vh;
-    border-radius: 50%;
-  }
-  .profiles > aside:nth-child(7) {
-    background: url("/img/member7.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30vh;
-    height: 30vh;
-    border-radius: 50%;
-  }
-  .profiles > aside:nth-child(8) {
-    background: url("/img/member8.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -581,6 +614,128 @@ section > article:nth-child(1) > h2 {
     background-color: #EC523F;
     color: whitesmoke;
     border: 0px solid transparent;
+  }
+}
+
+@media (min-width: 600px) {
+  header > article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: unset;
+  }
+  header div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header [class^="fa-"] {
+    color: white;
+    background-color: #EC523F;
+    padding: 3%;
+    border-radius: 50%;
+    font-size: 25px;
+  }
+  header [class*="fa-bars"] {
+    border-radius: 0%;
+  }
+  nav {
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  details {
+    height: 100%;
+  }
+  .services > article:nth-child(2) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .services aside {
+    width: 45%;
+    padding: 1%;
+    row-gap: 0px;
+  }
+  .services div {
+    row-gap: 5px;
+  }
+  .pics > aside:nth-child(odd),
+  .pics > aside:nth-child(even) {
+    width: 27vh;
+    height: 27vh;
+  }
+  .pics {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .profiles > aside:nth-child(1), .profiles > aside:nth-child(2), .profiles > aside:nth-child(3), .profiles > aside:nth-child(4) {
+    width: 26vh;
+    height: 26vh;
+  }
+  .profiles {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .design-skills > div:nth-child(2) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .skills-description {
+    width: 60%;
+  }
+  .progress-bar {
+    width: 40%;
+  }
+  .progress-bar span {
+    height: 3vh;
+  }
+  .contact > article:nth-child(2) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact > article:nth-child(2) > article {
+    width: 100%;
+  }
+  .contact form {
+    width: 80%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .contact p {
+    width: 90%;
+    text-align: justify;
   }
 }
 /*# sourceMappingURL=style.css.map */
