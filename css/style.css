@@ -738,4 +738,104 @@ section > article:nth-child(1) > h2 {
     text-align: justify;
   }
 }
+
+@media (min-width: 1000px) {
+  main {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .services div {
+    display: none;
+  }
+  .services aside {
+    width: 20%;
+  }
+  .pics > aside:hover {
+    background: none;
+    background-color: #EC523F;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    row-gap: 15px;
+  }
+  .pics > aside:hover h3, .pics > aside:hover p, .pics > aside:hover a {
+    display: block;
+    color: white;
+  }
+  .pics > aside:hover a {
+    text-decoration: none;
+  }
+  .profiles > aside:nth-child(odd),
+  .profiles > aside:nth-child(even) {
+    width: 28vh;
+    height: 28vh;
+  }
+  .profiles > aside:nth-child(odd),
+  .profiles > aside:nth-child(even) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 7px;
+  }
+  .profiles > aside:hover {
+    background: none;
+    background-color: #EC523F;
+  }
+  .profiles > aside:hover h3, .profiles > aside:hover div, .profiles > aside:hover span {
+    display: block;
+    color: white;
+  }
+  .profiles > aside:hover > div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .profiles > aside:hover h3 {
+    border-bottom: 1px solid white;
+    font-weight: 300;
+  }
+  .profiles > aside:hover [class^="fa-"] {
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+    color: white;
+    border-radius: 50%;
+    padding: 5%;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  .skills-description {
+    width: 70%;
+  }
+  .progress-bar {
+    width: 30%;
+  }
+  .progress-bar span {
+    height: 4%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
